@@ -1,0 +1,17 @@
+extends ../shared/template
+
+block content
+  h1 Welcome to Builder OOP
+
+  #controls
+    input#username(type='text' autofocus=true placeholder='Username')
+    button#login Login
+
+  #menu
+  #forest
+
+block scripts
+  script(src='/js/es6/compiled/game.js')
+  script(src='/js/es6/compiled/autogrow.js')
+  script(src='/js/es6/compiled/autoplant.js')
+  script(src='/js/es6/compiled/autoroot.js')

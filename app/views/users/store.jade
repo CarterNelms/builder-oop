@@ -1,0 +1,6 @@
+h5 For sale:
+- var itemTypes = Item.getAllItemTypes();
+each itemType, i in itemTypes
+  if user.cash > itemType.cost
+    button.purchase(data-name=itemType.name) #{itemType.name}: $#{itemType.cost.toFixed(2)}
+    //- id='purchase-#{i}' 

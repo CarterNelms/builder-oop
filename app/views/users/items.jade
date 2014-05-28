@@ -1,0 +1,10 @@
+h5 Your Upgrades:
+each item in items
+  .item(data-id=item._id data-name=item.name)
+    h6 #{item.name}
+    if item.name === 'auto-grow'
+      include ../items/autogrow
+    else if item.name === 'auto-plant'
+      include ../items/autoplant
+    else if item.name === 'auto-root'
+      include ../items/autoroot

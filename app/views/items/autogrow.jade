@@ -1,0 +1,11 @@
+- var min = 0;
+- var max = 10000;
+- var initialVal = (min+max)/2;
+div
+  | 0
+  input(type='range' min=min max=max value=initialVal)
+  | 10000
+span Chop at&nbsp;
+  span.autochop-height= initialVal
+  |ft
+button.switch On / Off

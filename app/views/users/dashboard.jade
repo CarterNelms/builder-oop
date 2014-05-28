@@ -1,0 +1,10 @@
+#user(data-id=user._id.toString())= user.username
+#woodCounter Wood:&nbsp;
+  span#wood= user.wood.toFixed(2).toString()
+#cashCounter $
+  span#cash= user.cash.toFixed(2).toString()
+button#plant Plant Seed
+button#getForest Get Forest
+form#sellForm
+  input#woodcount(type='text' name='woodcount' placeholder='Wood To Sell')
+  button#sellWood Sell Wood

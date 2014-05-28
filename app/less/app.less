@@ -1,0 +1,195 @@
+@primaryColor: #086020;
+@secondaryColor: #40b038;
+
+body{
+  background-image: url('/img/backgrounds/kokiriForestArt.png');
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-y: scroll;
+
+  > div{
+    margin: 5px;
+  }
+
+  #menu{
+    visibility: hidden;
+    color: @primaryColor;
+    font-weight: bold;
+
+    > *{
+      background-color: @secondaryColor;
+      border: 4px solid @primaryColor;
+      border-radius: 5px;
+      padding: 5px;
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 5px;
+      max-height: 130px;
+      overflow-x: hidden;
+      overflow-y: scroll;
+    }
+
+    > *:first-child{
+      overflow-y: initial;
+    }
+
+    > *:last-child{
+      margin-right: 0;
+    }
+
+    h5, h6{
+      padding: 0;
+      margin: 0;
+    }
+
+    h5{
+      font-size: 16px;
+    }
+
+    h6{
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+
+    .item{
+      border: 2px solid @primaryColor;
+      border-radius: 5px;
+      padding: 3px;
+      margin: 5px 0;
+
+      > *{
+        display: block;
+      }
+
+      .switch{
+        margin: 2px;
+      }
+    }
+
+    .item.on{
+      .switch{
+        border: 2px solid red;
+        margin: 0;        
+      }
+    }
+
+    #store{
+      button.purchase{
+        text-transform: capitalize;
+        display: block;
+      }
+    }
+
+    #user{
+      text-transform: capitalize;
+    }
+
+    button{
+      background-color: @primaryColor;
+      color: @secondaryColor;
+      border: none;
+      border-radius: 3px;
+      margin: 5px;
+      padding: 5px 3px;
+      font-size: 12px;
+      box-sizing: border-box;
+      -moz-box-sizing: border-box;    
+    }
+
+    input[type='text']{
+      border: 4px groove @primaryColor;
+      border-radius: 5px;
+      background-color: @secondaryColor;
+      color: @primaryColor;
+      padding: 2px;
+    }
+  }
+
+  #forest{
+    .treeWrap{
+      display: inline-block;
+      border: 2px solid black;
+      border-radius: 8px;
+      padding: 5px;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      background-color: @primaryColor;
+      vertical-align: top;
+
+      .tree{
+        // background-image: url('/img/trees/spritesheet.png');
+        background-size: 133.33%;
+        background-repeat: no-repeat;
+        border: 2px solid black;
+        border-radius: 4px;
+        background-color: white;
+        width: 75px;
+        height: 75px;
+        margin: auto;
+        margin-bottom: 5px;
+      }
+
+      .seed{
+        background-image: url('/img/trees/seed.png');
+      }
+
+      .sapling{
+        background-image: url('/img/trees/sapling.png');
+      }
+
+      .treenager{
+        background-image: url('/img/trees/treenager.png');
+      }
+
+      .adult{
+        background-image: url('/img/trees/adult.png');
+      }
+
+      .beanstalk{
+        background-image: url('/img/trees/beanstalk.png');
+      }
+
+      .dead{
+        background-image: url('/img/trees/dead.png');
+      }
+
+      .stump{
+        background-image: url('/img/trees/stump.png');
+        background-size: 100%;
+        background-repeat: no-repeat;
+      }
+
+      .controls{
+        width: 100%;
+        height: 25px;
+
+        > button{
+          width: 47.5%;
+          background-color: @secondaryColor;
+          color: @primaryColor;
+          border: none;
+          border-radius: 3px;
+          font-size: 12px;
+          font-weight: bold;
+          padding: 5px 1px;
+          box-sizing: border-box;
+          -moz-box-sizing: border-box;
+        }
+
+        > button:first-child{
+          min-width: 47.5%;
+          margin-right: 5%;
+        }
+      }
+    }
+  }
+}
+
+// ::selection {
+//   background: rgba(0, 0, 0, 0);
+//   /* Safari */
+// }
+// ::-moz-selection {
+//   background: rgba(0, 0, 0, 0);
+//   /* Firefox */
+// }

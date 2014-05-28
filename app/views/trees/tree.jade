@@ -1,0 +1,9 @@
+.treeWrap
+  .tree(data-id=tree._id.toString() class=tree.getClasses())
+    - var heightFloored = Math.floor(tree.height);
+    .height(data-height=tree.height) #{Math.floor(heightFloored/12)}' #{(heightFloored%12).toFixed()}"
+  .controls
+    if tree.isGrowable
+      button.grow() Grow
+    if tree.isChoppable
+      button.chop Chop
